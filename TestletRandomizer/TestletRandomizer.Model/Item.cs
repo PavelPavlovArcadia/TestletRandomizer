@@ -1,8 +1,9 @@
 ﻿namespace TestletRandomizer.Model
 {
-    public enum ItemTypeEnum
+    public class Item
     {
-        Pretest = 0,
-        Operational = 1
+        public string ItemId { get; set; }
+
+        public ItemTypeEnum ItemType { get; set; }
     }
 }

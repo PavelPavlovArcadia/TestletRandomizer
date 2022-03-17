@@ -89,7 +89,7 @@ namespace TestletRandomizer.Tests.BusinessLogicTests
             var result2 = testletRandomizerService.RandomizeTestletItems(TestletConstants.ValidTestlet.Items);
             var result1IdList = result1.Select(x => x.ItemId).ToList();
             var result2IdList = result2.Select(x => x.ItemId).ToList();
-            Assert.IsTrue(!result1IdList.SequenceEqual(result2IdList));
+            Assert.IsFalse(result1IdList.SequenceEqual(result2IdList));
         }
     }
 }
